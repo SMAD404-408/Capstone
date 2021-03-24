@@ -1,1 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- BEGIN HEAD -->
 
+<!--This Website was created using an agreed upon template puchased from ThemeForest.net-->    
+    
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta name="description" content="Bootsrtrap Framework for Green Valley Auctiosn and Moving" />
+	<meta name="author" content="Bethany Veit, Jessica Baumann, Nicholas Charland" />
+	<title>Green Valley Auctions and Moving | Calendar</title>
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css" />
+	<!-- icons -->
+	<link href="fonts/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+	<link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="fonts/material-design-icons/material-icon.css" rel="stylesheet" type="text/css" />
+	<!--bootstrap -->
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<!-- full calendar -->
+	<link href='assets/plugins/fullcalendar/packages/core/main.min.css' rel='stylesheet' />
+	<link href='assets/plugins/fullcalendar/packages/daygrid/main.min.css' rel='stylesheet' />
+	<link href='assets/plugins/fullcalendar/packages/timegrid/main.min.css' rel='stylesheet' />
+	<link href='assets/css/pages/fullcalendar.css' rel='stylesheet' />
+	<!-- Material Design Lite CSS -->
+	<link rel="stylesheet" href="assets/plugins/material/material.min.css">
+	<link rel="stylesheet" href="assets/css/material_style.css">
+	<!-- Date Time item CSS -->
+	<link rel="stylesheet" href="assets/plugins/flatpicker/css/flatpickr.min.css" />
+	<!-- Theme Styles -->
+	<link href="assets/css/theme/light/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css" />
+	<link href="assets/css/theme/light/style.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/plugins.min.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/theme/light/theme-color.css" rel="stylesheet" type="text/css" />
+	<!-- favicon -->
+	<link rel="shortcut icon" href="assets/img/favicon.svg" />
+</head>
+<!-- END HEAD -->
+
+<body
+	class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-white white-sidebar-color logo-cream">
+	<div class="page-wrapper">
+		<!-- start header -->
+		<div class="page-header navbar navbar-fixed-top">
+			<div class="page-header-inner ">
+				<!-- logo start -->
+				<div class="page-logo greenvalley">
+					<a href="index.html">
+						<img class="navbar-brand" src="assets/img/green-valley-logo.png" alt="Green Valley Logo" style="padding-top: 0px; margin-top: 0px; height: 100px; width: 150px;"> </a>
+				</div>
+				<!-- logo end -->
+				<ul class="nav navbar-nav navbar-left in">
+					<li><a href="#" class="menu-toggler sidebar-toggler"><i class="icon-menu"></i></a></li>
+				</ul>
+				<form class="search-form-opened" action="#" method="GET">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search..." name="query">
+						<span class="input-group-btn">
+							<a href="javascript:;" class="btn submit">
+								<i class="icon-magnifier"></i>
+							</a>
+						</span>
+					</div>
+				</form>
+				<!-- start mobile menu -->
+				<a class="menu-toggler responsive-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+					<span></span>
+				</a>
+				<!-- end mobile menu -->
+				<!-- start header menu -->
+				<div class="top-menu">
+					<ul class="nav navbar-nav pull-right">
+						
+						<!-- start notification bell -->
+						<li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
+							<a class="dropdown-toggle" data-bs-toggle="dropdown" data-hover="dropdown"
+								data-close-others="true">
+								<i class="fa fa-bell-o"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="external">
+									<h3><span class="bold">Notifications</span></h3>
+								</li>
+							</ul>
+						</li>
+						<!-- end notification bell -->
+						<!-- start message icon -->
+						<li class="dropdown dropdown-extended dropdown-inbox" id="header_inbox_bar">
+							<a class="dropdown-toggle" data-bs-toggle="dropdown" data-hover="dropdown"
+								data-close-others="true">
+								<i class="fa fa-envelope-o"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="external">
+									<h3><span class="bold">Messages</span></h3>
+								</li>
+							</ul>
+						</li>
+						<!-- end message icon -->
+						<!-- start manage user dropdown -->
+						<li class="dropdown dropdown-user">
+							<a class="dropdown-toggle" data-bs-toggle="dropdown" data-hover="dropdown"
+								data-close-others="true">
+								<img alt="" class="img-circle " src="assets/img/dp.jpg" />
+								<span class="username username-hide-on-mobile"> Greg Evans </span>
+								<i class="fa fa-angle-down"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-default">
+								<li>
+									<a href="user_profile.html">
+										<i class="icon-user"></i> Profile </a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-settings"></i> Settings
+									</a>
+								</li>
+								<li>
+									<a href="login.html">
+										<i class="icon-logout"></i> Log Out </a>
+								</li>
+							</ul>
+						</li>
+						<!-- end manage user dropdown -->
+						<li class="dropdown dropdown-quick-sidebar-toggler">
+							<a id="headerSettingButton" class="mdl-button mdl-js-button mdl-button--icon pull-right"
+								data-upgraded=",MaterialButton">
+								<i class="material-icons">more_vert</i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- end header -->
+		<!-- start color quick setting -->
+		<div class="settingSidebar">
+			<a href="javascript:void(0)" class="settingPanelToggle"> <i class="fa fa-spin fa-cog"></i>
+			</a>
+			<div class="settingSidebar-body ps-container ps-theme-default">
+				<div class=" fade show active">
+					<div class="setting-panel-header">Setting Panel
+					</div>
+					<div class="quick-setting slimscroll-style">
+						<ul id="themecolors">
+							<li>
+								<p class="sidebarSettingTitle">Sidebar Color</p>
+							</li>
+							<li class="complete">
+								<div class="theme-color sidebar-theme">
+									<a href="#" data-theme="white"><span class="head"></span><span
+											class="cont"></span></a>
+									<a href="#" data-theme="dark"><span class="head"></span><span
+											class="cont"></span></a>
+									<a href="#" data-theme="blue"><span class="head"></span><span
+											class="cont"></span></a>
+									<a href="#" data-theme="indigo"><span class="head"></span><span
+											class="cont"></span></a>
+									<a href="#" data-theme="cyan"><span class="head"></span><span
+											class="cont"></span></a>
+									<a href="#" data-theme="green"><span class="head"></span><span
+											class="cont"></span></a>
+									<a href="#" data-theme="red"><span class="head"></span><span
+											class="cont"></span></a>
+								</div>
+							</li>
+							<li>
+								<p class="sidebarSettingTitle">Header Brand color</p>
+							</li>
+							<li class="theme-option">
+								<div class="theme-color logo-theme">
+									<a href="#" data-theme="logo-white"><span class="head"></span><span
+											class="cont"></span></a>
+									<a href="#" data-theme="logo-dark"><span class="head"></span><span
+											class="cont"></span></a>
+									<a href="#" data-theme="logo-blue"><span class="head"></span><span
+											class="cont"></span></a>
+									<a href="#" data-theme="logo-indigo"><span class="head"></span><span
+											class="cont"></span></a>
+									<a href="#" data-theme="logo-cyan"><span class="head"></span><span
+											class="cont"></span></a>
+									<a href="#" data-theme="logo-green"><span class="head"></span><span
+											class="cont"></span></a>
+									<a href="#" data-theme="logo-red"><span class="head"></span><span
+											class="cont"></span></a>
+								</div>
+							</li>
+							<li>
+								<p class="sidebarSettingTitle">Header color</p>
+							</li>
+							<li class="theme-option">
+								<div class="theme-color header-theme">
+									<a href="#" data-theme="header-white"><span class="head"></span><span
+											class="cont"></span></a>
+									<a href="#" data-theme="header-dark"><span class="head"></span><span
+											class="cont"></span></a>
+									<a href="#" data-theme="header-blue"><span class="head"></span><span
+											class="cont"></span></a>
+									<a href="#" data-theme="header-indigo"><span class="head"></span><span
+											class="cont"></span></a>
+									<a href="#" data-theme="header-cyan"><span class="head"></span><span
+											class="cont"></span></a>
