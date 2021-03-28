@@ -11,25 +11,34 @@
 	<meta name="author" content="Nicholas Charland, Bethany Veit, Jessica Baumann" />
 	<title>Green Valley Auctions and Moving | Customer Dashboard</title>
 	<!-- google font -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css" />
-	<!-- icons -->
-	<link href="fonts/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
-	<link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-	<link href="fonts/material-design-icons/material-icon.css" rel="stylesheet" type="text/css" />
-	<!--bootstrap -->
-	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-	<link href="assets/plugins/summernote/summernote.css" rel="stylesheet">
-	<!-- Material Design Lite CSS -->
-	<link rel="stylesheet" href="assets/plugins/material/material.min.css">
-	<link rel="stylesheet" href="assets/css/material_style.css">
-	<!-- inbox style -->
-	<link href="assets/css/pages/inbox.min.css" rel="stylesheet" type="text/css" />
-	<!-- Theme Styles -->
-	<link href="assets/css/theme/light/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css" />
-	<link href="assets/css/plugins.min.css" rel="stylesheet" type="text/css" />
-	<link href="assets/css/theme/light/style.css" rel="stylesheet" type="text/css" />
-	<link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
-	<link href="assets/css/theme/light/theme-color.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css" />
+    <!-- icons -->
+    <link href="fonts/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="fonts/material-design-icons/material-icon.css" rel="stylesheet" type="text/css" />
+    <!--bootstrap -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/plugins/flatpicker/css/flatpickr.min.css" />
+    <link href="assets/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"
+        media="screen">
+    <link href="assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" rel="stylesheet" media="screen">
+    <!-- Material Design Lite CSS -->
+    <link rel="stylesheet" href="assets/plugins/material/material.min.css">
+    <link rel="stylesheet" href="assets/css/material_style.css">
+    <!-- Theme Styles -->
+    <link href="assets/css/theme/light/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css" />
+    <link href="assets/css/theme/light/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/pages/formlayout.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/theme/light/theme-color.css" rel="stylesheet" type="text/css" />
+    <!-- dropzone -->
+    <link href="assets/plugins/dropzone/dropzone.css" rel="stylesheet" media="screen">
+    <!--tagsinput-->
+    <link href="assets/plugins/jquery-tags-input/jquery-tags-input.css" rel="stylesheet">
+    <!--select2-->
+    <link href="assets/plugins/select2/css/select2.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
 	<!-- favicon -->
 	<link rel="shortcut icon" href="assets/img/favicon.svg" />
 </head>
@@ -145,11 +154,6 @@
 							<div class=" pull-left">
 								<div class="page-title">Customer Service Request Form</div>
 							</div>
-							<ol class="breadcrumb page-breadcrumb pull-right">
-								<li><i class="fa fa-home"></i>&nbsp;<a class="parent-item"
-										href="index.html">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
-								</li>
-							</ol>
 						</div>
 					</div>
 					<div class="row">
@@ -157,146 +161,58 @@
 							<div class="card card-box">
 								<div class="card-head">
 									<header>Please fill out this form to create a service request</header>
-									<button id="panel-button3"
-										class="mdl-button mdl-js-button mdl-button--icon pull-right"
-										data-upgraded=",MaterialButton">
-										<i class="material-icons">more_vert</i>
-									</button>
-									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-										data-mdl-for="panel-button3">
-										<li class="mdl-menu__item"><i class="material-icons">assistant_photo</i>Action
-										</li>
-										<li class="mdl-menu__item"><i class="material-icons">print</i>Another action
-										</li>
-										<li class="mdl-menu__item"><i class="material-icons">favorite</i>Something else
-											here</li>
-									</ul>
 								</div>
 								<div class="card-body " id="bar-parent2">
+									<form>
 									<div class="row">
 										<div class="col-md-6 col-sm-6">
-											<!-- text input -->
 											<div class="form-group">
-												<label>Text</label>
-												<input type="text" class="form-control" placeholder="Enter ...">
-											</div>
-											<div class="form-group">
-												<label>Text Disabled</label>
-												<input type="text" class="form-control" placeholder="Enter ..."
-													disabled>
-											</div>
-											<div class="form-group">
-												<label>Text Readonly</label>
-												<input type="text" class="form-control" placeholder="Enter ..."
-													readonly>
-											</div>
-											<!-- checkbox -->
-											<div class="form-group">
-												<div class="checkbox checkbox-icon-black p-0">
-													<input id="checkbox1" type="checkbox">
-													<label for="checkbox1">
-														Checkbox 1
-													</label>
-												</div>
-												<div class="checkbox checkbox-icon-black p-0">
-													<input id="checkbox2" type="checkbox" checked="checked">
-													<label for="checkbox2">
-														Checkbox 2
-													</label>
-												</div>
-												<div class="checkbox checkbox-icon-black p-0">
-													<input id="checkbox3" type="checkbox" disabled>
-													<label for="checkbox3">
-														Checkbox 3
-													</label>
-												</div>
-											</div>
-											<!-- radio -->
-											<div class="form-group">
-												<div class="radio p-0">
-													<input type="radio" name="optionsRadios" id="optionsRadios1"
-														value="option1" checked>
-													<label for="optionsRadios1">
-														Option 1
-													</label>
-												</div>
-												<div class="radio p-0">
-													<input type="radio" name="optionsRadios" id="optionsRadios2"
-														value="option2">
-													<label for="optionsRadios2">
-														Option 2
-													</label>
-												</div>
-												<div class="radio p-0">
-													<input type="radio" name="optionsRadios" id="optionsRadios3"
-														value="option3" disabled>
-													<label for="optionsRadios3">
-														Option disabled
-													</label>
-												</div>
-											</div>
-											<!-- select -->
-											<div class="form-group">
-												<label>Select</label>
+												<!-- Select Service -->
+												<label>Please Choose a Service</label>
 												<select class="form-select">
-													<option>option 1</option>
-													<option>option 2</option>
-													<option>option 3</option>
-													<option>option 4</option>
-													<option>option 5</option>
+													<option>Auction</option>
+													<option>Move</option>
 												</select>
 											</div>
+
+											<!-- Description Box -->
+
 											<div class="form-group">
-												<label>Select Disabled</label>
-												<select class="form-select" disabled>
-													<option>option 1</option>
-													<option>option 2</option>
-													<option>option 3</option>
-													<option>option 4</option>
-													<option>option 5</option>
-												</select>
+												<label>Description</label>
+												<textarea class="form-control" rows="3"
+													placeholder="Please provide a description of the items you need auctioned or moved..."></textarea>
 											</div>
-										</div>
+
+											<!--Date Picker -->
+											<div class="form-group">
+                                            <label>Requested Date of Service</label>
+                                            <div class="col-sm-10">
+                                                <div class="input-append date form_date" data-date-format="mm-dd-yyyy"
+                                                    data-date="03-30-2021">
+                                                    <div class="input-group datePicker">
+                                                        <input type="text" class="form-control input-height">
+                                                        <span class="add-on dateBtn"><i
+                                                                class="fa fa-calendar icon-th"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   	</div>
 										<div class="col-md-6 col-sm-6">
 											<!-- textarea -->
 											<div class="form-group">
-												<label>Textarea</label>
+												<label>Additional Notes</label>
 												<textarea class="form-control" rows="3"
-													placeholder="Enter ..."></textarea>
-											</div>
-											<div class="form-group">
-												<label>Textarea Disabled</label>
-												<textarea class="form-control" rows="3" placeholder="Enter ..."
-													disabled></textarea>
-											</div>
-											<div class="form-group">
-												<label>Textarea Readonly</label>
-												<textarea class="form-control" rows="3" placeholder="Enter ..."
-													Readonly></textarea>
-											</div>
-											<!-- Select multiple-->
-											<div class="form-group">
-												<label>Select Multiple</label>
-												<select multiple class="form-control">
-													<option>option 1</option>
-													<option>option 2</option>
-													<option>option 3</option>
-													<option>option 4</option>
-													<option>option 5</option>
-												</select>
-											</div>
-											<div class="form-group">
-												<label>Select Multiple Disabled</label>
-												<select multiple class="form-control" disabled>
-													<option>option 1</option>
-													<option>option 2</option>
-													<option>option 3</option>
-													<option>option 4</option>
-													<option>option 5</option>
-												</select>
+													placeholder="Provide any additional notes that you think are worth mentioning..."></textarea>
 											</div>
 										</div>
 									</div>
+									<div class="row">
+									<div class="col text-center pt-5">
+											<button type="button" class="btn btn-circle  btn-lg custom-btn m-b-10">Submit Service Request</button>
+									</div>
+								</div>
+								</form>
 								</div>
 							</div>
 						</div>
@@ -304,27 +220,39 @@
 				</div>
 			</div>
 		</div>
-		</div>
-		</div>
-		</div>
+
 		<!-- end page container -->
 	</div>
 	<!-- start js include path -->
-	<script src="assets/plugins/jquery/jquery.min.js"></script>
-	<script src="assets/plugins/popper/popper.js"></script>
-	<script src="assets/plugins/jquery-blockui/jquery.blockui.min.js"></script>
-	<script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
-	<!-- bootstrap -->
-	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-	<script src="assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
-	<script src="assets/plugins/sparkline/jquery.sparkline.js"></script>
-	<script src="assets/js/pages/sparkline/sparkline-data.js"></script>
-	<!-- Common js-->
-	<script src="assets/js/app.js"></script>
-	<script src="assets/js/layout.js"></script>
-	<script src="assets/js/theme-color.js"></script>
-	<!-- material -->
-	<script src="assets/plugins/material/material.min.js"></script>
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <script src="assets/plugins/popper/popper.js"></script>
+    <script src="assets/plugins/jquery-blockui/jquery.blockui.min.js"></script>
+    <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+    <script src="assets/plugins/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
+    <script src="assets/plugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+    <script src="assets/plugins/bootstrap-datepicker/datepicker-init.js"></script>
+    <script src="assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js" charset="UTF-8"></script>
+    <script src="assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker-init.js" charset="UTF-8"></script>
+    <script src="assets/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script src="assets/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker-init.js" charset="UTF-8">
+    </script>
+    <!-- Common js-->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/layout.js"></script>
+    <script src="assets/js/theme-color.js"></script>
+    <!-- Material -->
+    <script src="assets/plugins/material/material.min.js"></script>
+    <!-- dropzone -->
+    <script src="assets/plugins/dropzone/dropzone.js"></script>
+    <!--tags input-->
+    <script src="assets/plugins/jquery-tags-input/jquery-tags-input.js"></script>
+    <script src="assets/plugins/jquery-tags-input/jquery-tags-input-init.js"></script>
+    <!--select2-->
+    <script src="assets/plugins/select2/js/select2.js"></script>
+    <script src="assets/js/pages/select2/select2-init.js"></script>
 	<!--apex chart-->
 	<script src="assets/plugins/apexcharts/apexcharts.min.js"></script>
 	<script src="assets/js/pages/chart/chartjs/home-data.js"></script>

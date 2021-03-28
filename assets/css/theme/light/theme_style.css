@@ -6634,6 +6634,14 @@ table.valign-middle tbody tr td {
 					[17. BUTTON ]
 
 **********************************************************************/
+.custom-btn {
+  background-color: #e1e5ec;
+}
+
+.custom-btn:hover {
+  color: #fff;
+  background-color: #276145 !important;
+}
 
 .btn {
   outline: 0 !important;
