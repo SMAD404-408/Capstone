@@ -9,7 +9,7 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<meta name="description" content="Bootstrap Framework for Green Valley Auctions and Moving" />
 	<meta name="author" content="Nicholas Charland, Bethany Veit, Jessica Baumann" />
-	<title>Green Valley Auctions and Moving | Customers</title>
+	<title>Green Valley Auctions and Moving | Service Tickets</title>
 	<!-- google font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css" />
 	<!-- icons -->
@@ -232,7 +232,7 @@
 									<span class="title">Customer Service Requests</span>
 								</a>
 							</li>
-							<li class="nav-item start active">
+							<li class="nav-item">
 								<a href="customers.html" class="nav-link nav-toggle">
 									<i class="material-icons">group</i>
 									<span class="title">Customers</span>
@@ -249,13 +249,13 @@
 					<div class="page-bar">
 						<div class="page-title-breadcrumb">
 							<div class=" pull-left">
-								<div class="page-title">Customers</div>
+								<div class="page-title">Service Requests</div>
 							</div>
 							<ol class="breadcrumb page-breadcrumb pull-right">
 								<li><i class="fa fa-home"></i>&nbsp;<a class="parent-item"
 										href="index.html">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
 								</li>
-								<li class="active">Customers</li>
+								<li class="active">Service Tickets</li>
 							</ol>
 						</div>
 					</div>
@@ -265,7 +265,7 @@
 								<div class="col-md-12">
 									<div class="card">
 										<div class="card-head">
-											<header>Customer Database</header>
+											<header>Service Tickets</header>
 											<div class="tools">
 												<a class="fa fa-repeat btn-color box-refresh" href="javascript:;"></a>
 												<a class="t-collapse btn-color fa fa-chevron-down"
@@ -276,11 +276,17 @@
 										<div class="col-md-8 col-sm-8 pt-3">
 											<div class="input-group input-group-sm">
 												<span class="input-group-btn pe-2">
-													<button type="button" class="btn btn-info btn-flat">Create New Customer</button>
-												</span>
-												<input type="text" class="form-control " placeholder="Search for a customer" name="query">
-												<span class="input-group-btn ps-2">
-													<button type="button" class="btn btn-info btn-flat">Go!</button>
+													<button type="button" class="btn btn-info btn-flat dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">All Service Tickets
+														<span class="fa fa-caret-down"></span>
+													</button>
+													<ul class="dropdown-menu" style="margin: 0px;">
+														<li><a href="#">Action</a>
+														</li>
+														<li><a href="#">Another action</a>
+														</li>
+														<li><a href="#">Something else here</a>
+														</li>
+													</ul>
 												</span>
 											</div>
 										</div>
@@ -290,110 +296,85 @@
 												<table class="table table-striped table-hover">
 													<thead>
 														<tr>
-															<th> First Name </th>
-															<th> Last Name </th>
-															<th> Phone </th>
-															<th> Email </th>
-															<th> Street </th>
-															<th> City </th>
-															<th> State </th>
-															<th> Zip </th>
-															<th> Initial Contact </th>
-															<th> Discovery Method </th>
-															<th> Last Saved </th>
+															<th> Details </th>
+															<th> Customer </th>
+															<th> Status </th>
+															<th> Current Employee </th>
+															<th> Start Deadline </th>
+															<th> End Deadline </th>
+															<th> Initiating Employee </th>
 														</tr>
 													</thead>
 													<tbody>
 														<tr>
-															<td> Mark </td>
+															<td><span class="label label-info label-mini">View Service Ticket</span>
+															</td>
 															<td> Otto </td>
-															<td> 7579433011 </td>
+															<td> New </td>
 															<td> Ottoman@gmail.com </td>
 															<td> Wall St. </td>
 															<td> Dayton </td>
-															<td> OH </td>
-															<td> 45440 </td>
-															<td> Phone </td>
-															<td> Guy Buddy </td>
-															<td> 11/4/2020 </td>
+															<td> Dayton </td>
 														</tr>
 														<tr>
-															<td> Thomas </td>
-															<td> Jefferson </td>
-															<td> 5403342697 </td>
-															<td> JeffyJeff@gmail.com </td>
-															<td> W Bruce St. </td>
-															<td> Harrisonburg </td>
-															<td> VA </td>
-															<td> 22802</td>
-															<td> In Person </td>
-															<td> Billboard </td>
-															<td> 12/3/2020 </td>
-														</tr>
-														<tr>
-															<td> Nick </td>
-															<td> Charland </td>
-															<td> 7576682477 </td>
-															<td> NC3@gmail.com </td>
-															<td> Cale Cir. </td>
-															<td> Newport News </td>
-															<td> VA </td>
-															<td> 23303 </td>
-															<td> Phone </td>
-															<td> Johnny Knoxville </td>
-															<td> 3/2/2021 </td>
-														</tr>
-														<tr>
-															<td> James </td>
-															<td> Madison </td>
-															<td> 5402231224 </td>
-															<td> Jmaddy@jmu.edu </td>
-															<td> South Main St. </td>
-															<td> Harrisonburg </td>
-															<td> VA </td>
-															<td> 22807 </td>
-															<td> In Person </td>
-															<td> John Alger </td>
-															<td> 3/4/2021 </td>
-														</tr>
-														<tr>
-															<td> Michael </td>
-															<td> Scott </td>
-															<td> 5701234567 </td>
-															<td> bestBoss@gmail.com </td>
-															<td> Office St. </td>
-															<td> Scranton </td>
-															<td> PA </td>
-															<td> 18505 </td>
-															<td> Email </td>
-															<td> Dwight Schrute </td>
-															<td> 4/5/2021 </td>
-														</tr>
-														<tr>
-															<td> Vincent </td>
-															<td> Van Gogh </td>
-															<td> 4346682477 </td>
-															<td> paint@gmail.com </td>
-															<td> Starry Night Way </td>
-															<td> Charlottesville </td>
-															<td> VA </td>
-															<td> 66305 </td>
-															<td> In Person </td>
-															<td> TV </td>
-															<td> 4/8/2021 </td>
-														</tr>
-														<tr>
-															<td> Mark </td>
+															<td><span class="label label-info label-mini">View Service Ticket</span>
+															</td>
 															<td> Otto </td>
-															<td> 7579433011 </td>
+															<td> New </td>
 															<td> Ottoman@gmail.com </td>
 															<td> Wall St. </td>
 															<td> Dayton </td>
-															<td> OH </td>
-															<td> 45440 </td>
-															<td> Phone </td>
-															<td> Guy Buddy </td>
-															<td> 11/4/2020 </td>
+															<td> Dayton </td>
+														</tr>
+														<tr>
+															<td><span class="label label-info label-mini">View Service Ticket</span>
+															</td>
+															<td> Otto </td>
+															<td> New </td>
+															<td> Ottoman@gmail.com </td>
+															<td> Wall St. </td>
+															<td> Dayton </td>
+															<td> Dayton </td>
+														</tr>
+														<tr>
+															<td><span class="label label-info label-mini">View Service Ticket</span>
+															</td>
+															<td> Otto </td>
+															<td> New </td>
+															<td> Ottoman@gmail.com </td>
+															<td> Wall St. </td>
+															<td> Dayton </td>
+															<td> Dayton </td>
+														</tr>
+														<tr>
+															<td><span class="label label-info label-mini">View Service Ticket</span>
+															</td>
+															<td> Otto </td>
+															<td> Completed </td>
+															<td> Ottoman@gmail.com </td>
+															<td> Wall St. </td>
+															<td> Dayton </td>
+															<td> Dayton </td>
+														</tr>
+														<tr>
+															<td><span class="label label-info label-mini">View Service Ticket</span>
+															</td>
+															<td> Otto </td>
+															<td> Completed </td>
+															<td> Ottoman@gmail.com </td>
+															<td> Wall St. </td>
+															<td> Dayton </td>
+															<td> Dayton </td>
+														</tr>
+														<tr>
+															<td><span class="label label-info label-mini">View Service Ticket</span>
+															</td>
+															<td> Otto </td>
+															<td> Completed </td>
+															<td> Ottoman@gmail.com </td>
+															<td> Wall St. </td>
+															<td> Dayton </td>
+															<td> Dayton </td>
 														</tr>
 													</tbody>
 												</table>
