@@ -18,19 +18,19 @@
 	<link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 	<link href="fonts/material-design-icons/material-icon.css" rel="stylesheet" type="text/css" />
 	<!--bootstrap -->
-	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 	<!-- Material Design Lite CSS -->
-	<link rel="stylesheet" href="assets/plugins/material/material.min.css">
-	<link rel="stylesheet" href="assets/css/material_style.css">
+	<link rel="stylesheet" href="../assets/plugins/material/material.min.css">
+	<link rel="stylesheet" href="../assets/css/material_style.css">
 	<!-- Theme Styles -->
-	<link href="assets/css/theme/light/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css" />
-	<link href="assets/css/theme/light/style.css" rel="stylesheet" type="text/css" />
-	<link href="assets/css/plugins.min.css" rel="stylesheet" type="text/css" />
-	<link href="assets/css/pages/formlayout.css" rel="stylesheet" type="text/css" />
-	<link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
-	<link href="assets/css/theme/light/theme-color.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/css/theme/light/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css" />
+	<link href="../assets/css/theme/light/style.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/css/plugins.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/css/pages/formlayout.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/css/responsive.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/css/theme/light/theme-color.css" rel="stylesheet" type="text/css" />
 	<!-- favicon -->
-	<link rel="shortcut icon" href="assets/img/favicon.svg" />
+	<link rel="shortcut icon" href="../assets/img/favicon.svg" />
 </head>
 <!-- END HEAD -->
 
@@ -238,12 +238,6 @@
 									<span class="title">Customers</span>
 								</a>
 							</li>
-							<li class="nav-item">
-								<a href="register_employee.html" class="nav-link nav-toggle">
-									<i class="material-icons">person</i>
-									<span class="title">Register an Employee</span>
-								</a>
-							</li>
 						</ul>
 					</div>
 				</div>
@@ -309,16 +303,10 @@
 											</div>
                                             <!-- PHONE NUMBER -->
 											<div class="form-group">
-												<label>Phone Number</label>
+												<label>Home Phone Number</label>
 												<input type="text" class="form-control" placeholder="Enter...">
-                                                <div class="form-group">
-												<label>Phone Type</label>
-												<select class="form-select">
-													<option>Mobile</option>
-													<option>Home</option>
-													<option>Work</option>
-												</select>
-											</div>
+                                                <label>Mobile Phone Number</label>
+												<input type="text" class="form-control" placeholder="Enter...">
 											</div> 
                                             <!-- ADDRESS -->
                                             <div class="form-group">
@@ -329,57 +317,22 @@
                                                 <input type="text" class="form-control" placeholder="State">
                                                 <input type="text" class="form-control" placeholder="ZipCode">
 											</div>
+                                            
 										</div>
                                         
                                         
                                         <!-- END OF COLUMN ONE -->
                                         <!-- START OF COLUMN TWO -->
 										<div class="col-md-6 col-sm-6">
-                        
-                                        <!-- Email Address -->
-                                        <div class="form-group">
-								            <label>E-Mail Address</label>
-								            <input type="text" class="form-control" placeholder="Enter...">
-                                            </div>
-                                        <!-- PREFERRED METHOD OF CONTACT -->
-                                        <div class="form-group">
-                                                <label>Preferred Method of Contact</label>
-												<div class="checkbox checkbox-icon-black p-0">
-													<input id="checkbox5" type="checkbox">
-													<label for="checkbox5">
-														Text
-													</label>
-												</div>
-												<div class="checkbox checkbox-icon-black p-0">
-													<input id="checkbox6" type="checkbox">
-													<label for="checkbox6">
-														Call
-													</label>
-												</div>
-                                                <div class="checkbox checkbox-icon-black p-0">
-													<input id="checkbox7" type="checkbox">
-													<label for="checkbox7">
-														E-Mail
-													</label>
-												</div>
-                                                <div class="checkbox checkbox-icon-black p-0">
-													<input id="checkbox8" type="checkbox">
-													<label for="checkbox8">
-														Mobile Phone
-													</label>
-												</div>
-                                                <div class="checkbox checkbox-icon-black p-0">
-													<input id="checkbox9" type="checkbox">
-													<label for="checkbox9">
-														Home Phone
-													</label>
-												</div>
-                                                <div class="checkbox checkbox-icon-black p-0">
-													<input id="checkbox10" type="checkbox">
-													<label for="checkbox10">
-														Work Phone
-													</label>
-												</div>
+                                        
+                                        <!-- Pick Up ADDRESS -->
+                                            <div class="form-group">
+												<label>Pick-Up Address</label>
+												<input type="text" class="form-control" placeholder="Street">
+                                                <input type="text" class="form-control" placeholder="Street line 2">
+                                                <input type="text" class="form-control" placeholder="City/Town">
+                                                <input type="text" class="form-control" placeholder="State">
+                                                <input type="text" class="form-control" placeholder="ZipCode">
 											</div>
                                             <!-- NOTES -->
 											<div class="form-group row">
@@ -412,7 +365,7 @@
 						<div class="col-md-12 col-sm-12">
 							<div class="card card-box">
 								<div class="card-head">
-									<header>PRELIMINARY Move Assessment</header>
+									<header>Packing</header>
 									<button id="panel-button3"
 										class="mdl-button mdl-js-button mdl-button--icon pull-right"
 										data-upgraded=",MaterialButton">
@@ -432,93 +385,74 @@
 									<div class="row">
 										<div class="col-md-6 col-sm-6">
 											<!-- text input -->
-                                            <!-- MOVE OUT DATE -->
+                                            <!-- PACKING MATERIALS -->
 											<div class="form-group">
-												<label>What date do you have to be out of your current address?</label>
-												<input type="text" class="form-control" placeholder="MM/DD/YYYY">
-											</div>
-                                            <!-- WINDOW OF DAYS -->
-											<div class="form-group">
-												<label>What is the window of days you can move out?</label>
-												<input type="text" class="form-control" placeholder="MM/DD/YYYY-MM/DD/YYYY">
-											</div>
-                                            <!-- MOVING TO ADDRESS -->
-                                            <div class="form-group">
-												<label>What is the address you are moving to?</label>
-												<input type="text" class="form-control" placeholder="Street">
-                                                <input type="text" class="form-control" placeholder="Street line 2">
-                                                <input type="text" class="form-control" placeholder="City/Town">
-                                                <input type="text" class="form-control" placeholder="State">
-                                                <input type="text" class="form-control" placeholder="ZipCode">
+                                                <label>Boxes and Packing Materials</label>
+												<div class="checkbox checkbox-icon-black p-0">
+													<input id="checkbox1" type="checkbox">
+													<label for="checkbox1">
+														Small
+													</label>
+												    <input type="text" class="form-control" placeholder="Amount">
+												</div>
+												<div class="checkbox checkbox-icon-black p-0">
+													<input id="checkbox2" type="checkbox">
+													<label for="checkbox2">
+														Medium
+													</label>
+												    <input type="text" class="form-control" placeholder="Amount">
+												</div>
+                                                <div class="checkbox checkbox-icon-black p-0">
+													<input id="checkbox3" type="checkbox">
+													<label for="checkbox3">
+														Large
+													</label>
+                                                    <input type="text" class="form-control" placeholder="Amount">
+												</div>
+                                                <div class="checkbox checkbox-icon-black p-0">
+													<input id="checkbox4" type="checkbox">
+													<label for="checkbox4">
+														Art
+													</label>
+                                                    <input type="text" class="form-control" placeholder="Amount">
+												</div>
+                                                <div class="checkbox checkbox-icon-black p-0">
+													<input id="checkbox5" type="checkbox">
+													<label for="checkbox5">
+														Small Pads
+													</label>
+                                                    <input type="text" class="form-control" placeholder="Amount">
+                                                </div>
+                                                <div class="checkbox checkbox-icon-black p-0">
+													<input id="checkbox6" type="checkbox">
+													<label for="checkbox6">
+														Large Pads
+													</label>
+                                                    <input type="text" class="form-control" placeholder="Amount">
+                                                </div>
 											</div>
 										</div>
                                         <!-- END OF COLUMN ONE -->
                                         
                                         <!-- START OF COLUMN TWO -->
 										<div class="col-md-6 col-sm-6">
-                                        <!-- PICTURES? -->
-											<div class="form-group">
-                                                <label>Is there an MLS Listing?</label>
-												<div class="checkbox checkbox-icon-black p-0">
-													<input id="checkbox11" type="checkbox">
-													<label for="checkbox11">
-														Yes
-													</label>
+                                        <!-- NOTES -->
+											<div class="form-group row">
+								                <label>Crew</label>
+												    <div class="textarea">
+													<textarea name="Notes" placeholder=" Type..."
+														class="form-control-textarea" rows="5"></textarea>
 												</div>
-												<div class="checkbox checkbox-icon-black p-0">
-													<input id="checkbox12" type="checkbox">
-													<label for="checkbox12">
-														No
-													</label>
-												</div>
-											</div>
-                                            <!-- LIST OF ITEMS? -->
-											<div class="form-group">
-                                                <label>Can you send photos if needed?</label>
-												<div class="checkbox checkbox-icon-black p-0">
-													<input id="checkbox13" type="checkbox">
-													<label for="checkbox13">
-														Yes
-													</label>
-												</div>
-												<div class="checkbox checkbox-icon-black p-0">
-													<input id="checkbox14" type="checkbox">
-													<label for="checkbox14">
-														No
-													</label>
-												</div>
-											</div>
-                                            <!-- ADDITIONAL SERVICES? -->
-											<div class="form-group">
-                                                <label>Do you need add-on services?</label>
-												<div class="checkbox checkbox-icon-black p-0">
-													<input id="checkbox15" type="checkbox">
-													<label for="checkbox15">
-														Packing
-													</label>
-												</div>
-                                                <div class="checkbox checkbox-icon-black p-0">
-													<input id="checkbox16" type="checkbox">
-													<label for="checkbox16">
-														Trash Removal and Donation Housing
-													</label>
-												</div>
-                                                <!-- TRASH DESCRIPTION -->
-                                                <div class="form-group">
-												<label>Trash Description</label>
-												<input type="text" class="form-control" placeholder="Optional">
-											</div>
-											</div>
-                                            <!-- AUCTION SERVICES? -->
-                                            <a href="auctionservice.html">Need Auction Services?</a>
+								            </div>
                                             <!-- NOTES -->
 											<div class="form-group row">
 								                <label>Notes</label>
 												    <div class="textarea">
-													<textarea name="Notes" placeholder="Notes"
+													<textarea name="Notes" placeholder=" Notes"
 														class="form-control-textarea" rows="5"></textarea>
 												</div>
 								            </div>
+											</div>
 										</div>
                                         <div class="form-group">
 								            <div class="offset-md-3 col-md-9">
@@ -533,7 +467,6 @@
 					</div>
                     </div>
                 </div>
-            </div>
 			<!-- end container content -->
     
             <!-- start page container THREE -->
@@ -566,11 +499,112 @@
 									<div class="row">
 										<div class="col-md-6 col-sm-6">
 											<!-- START OF COLUMN ONE -->
+                                            <!-- DUMPSTER -->
+                                            <div class="form-group">
+                                                <label>Dumpster?</label>
+												<div class="checkbox checkbox-icon-black p-0">
+													<input id="checkbox10" type="checkbox">
+													<label for="checkbox10">
+														Yes
+													</label>
+												</div>
+												<div class="checkbox checkbox-icon-black p-0">
+													<input id="checkbox11" type="checkbox">
+													<label for="checkbox11">
+														No
+													</label>
+												</div>
+											</div>
+                                            <!-- CURRENT ADDRESS -->
+                                            <div class="form-group">
+												<label>Current Address</label>
+												<input type="text" class="form-control" placeholder="Street">
+                                                <input type="text" class="form-control" placeholder="Street line 2">
+                                                <input type="text" class="form-control" placeholder="City/Town">
+                                                <input type="text" class="form-control" placeholder="State">
+                                                <input type="text" class="form-control" placeholder="ZipCode">
+											</div>
+                                            <!-- HOW MANY MEN -->
+											<div class="form-group">
+												<label>Number of Men Needed</label>
+												<input type="text" class="form-control" placeholder="Enter...">
+											</div>
+										</div>
+                                        <!-- END OF COLUMN ONE -->
+                                        
+                                        <!-- START OF COLUMN TWO -->
+										<div class="col-md-6 col-sm-6">
+                                        <!-- CHARGING -->
+                                            <div class="form-group">
+												<label>How Much We're Charging</label>
+												<input type="text" class="form-control" placeholder="Price">
+											</div>
+                                        <!-- SCHEDULING -->
+                                            <a href="schedulingpopup.html">Scheduling</a>
+                                            <br>
+                                            <!-- TRASH DESCRIPTION -->
+											<div class="form-group row">
+								                <label>Trash Description</label>
+												    <div class="textarea">
+													<textarea name="Notes" placeholder=" Type..."
+														class="form-control-textarea" rows="5"></textarea>
+												</div>
+								            </div>
+                                            <!-- BUTTONS -->
+                                            <div class="form-group">
+								            <div class="offset-md-3 col-md-9">
+								                <button type="submit" class="btn btn-info m-r-20">Submit</button>
+								                <button type="button" class="btn btn-default">Cancel</button>
+								            </div>
+								        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+                    </div>
+                </div>
+            </div>
+    </div>
+			<!-- end page content -->
+    
+    <!-- start page container TWO -->
+        		<div class="page-container">
+			<!-- start page content -->
+            <div class="page-content-wrapper">
+				<div class="page-content">
+					<div class="row">
+                <!--Start of Form -->
+					</div>
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="card card-box">
+								<div class="card-head">
+									<header>Auction Pick-Up</header>
+									<button id="panel-button3"
+										class="mdl-button mdl-js-button mdl-button--icon pull-right"
+										data-upgraded=",MaterialButton">
+										<i class="material-icons">more_vert</i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+										data-mdl-for="panel-button3">
+										<li class="mdl-menu__item"><i class="material-icons">assistant_photo</i>Flag
+										</li>
+										<li class="mdl-menu__item"><i class="material-icons">print</i>Print
+										</li>
+										<!-- <li class="mdl-menu__item"><i class="material-icons">favorite</i>Something else
+											here</li> -->
+									</ul>
+								</div>
+								<div class="card-body " id="bar-parent2">
+									<div class="row">
+										<div class="col-md-6 col-sm-6">
+											<!-- text input -->
                                             <!-- NOTES -->
 											<div class="form-group row">
-								                <label>INVENTORY</label>
+								                <label>Crew</label>
 												    <div class="textarea">
-													<textarea name="Notes" placeholder="Notes"
+													<textarea name="Notes" placeholder=" Type..."
 														class="form-control-textarea" rows="5"></textarea>
 												</div>
 								            </div>
@@ -579,6 +613,7 @@
                                                 <div class="form-group">
 												<label>Type of Residence</label>
 												<select class="form-select">
+                                                    <option value="" disabled selected>Select One</option>
 													<option>House</option>
 													<option>Apartment</option>
 													<option>Storage Unit</option>
@@ -635,7 +670,12 @@
 													</label>
                                                 </div>
 											</div>
-                                            <!-- TRUCKS -->
+										</div>
+                                        <!-- END OF COLUMN ONE -->
+                                        
+                                        <!-- START OF COLUMN TWO -->
+										<div class="col-md-6 col-sm-6">
+                                        <!-- TRUCKS -->
 											<div class="form-group">
                                                 <label>Trucks Being Taken</label>
 												<div class="checkbox checkbox-icon-black p-0">
@@ -674,72 +714,28 @@
 														Van
 													</label>
                                                 </div>
+                                        <!-- NOTES -->
+											<div class="form-group row">
+								                <label>Estimated Rates and Fees</label>
+												    <div class="textarea">
+													<textarea name="Notes" placeholder=" Type..."
+														class="form-control-textarea" rows="4"></textarea>
+												</div>
+								            </div>
+                                            <!-- SCHEDULE AUCTION DATE -->
+                                            <a href="schedulingpopup" target="popup" onclick="window.open('schedulingpopup.html','popup','width=600,height=600'); return false;">Auction Date Set</a>
+										</div>
+                                            <!-- NOTES -->
+											<div class="form-group row">
+								                <label>Notes</label>
+												    <div class="textarea">
+													<textarea name="Notes" placeholder=" Notes"
+														class="form-control-textarea" rows="5"></textarea>
+												</div>
+								            </div>
 											</div>
 										</div>
-                                        <!-- END OF COLUMN ONE -->
-                                        
-                                        <!-- START OF COLUMN TWO -->
-										<div class="col-md-6 col-sm-6">
-                                        <!-- PACKING MATERIALS -->
-											<div class="form-group">
-                                                <label>Boxes and Packing Materials</label>
-												<div class="checkbox checkbox-icon-black p-0">
-													<input id="checkbox33" type="checkbox">
-													<label for="checkbox33">
-														Small
-													</label>
-												    <input type="text" class="form-control" placeholder="Amount">
-												</div>
-												<div class="checkbox checkbox-icon-black p-0">
-													<input id="checkbox34" type="checkbox">
-													<label for="checkbox34">
-														Medium
-													</label>
-												    <input type="text" class="form-control" placeholder="Amount">
-												</div>
-                                                <div class="checkbox checkbox-icon-black p-0">
-													<input id="checkbox35" type="checkbox">
-													<label for="checkbox35">
-														Large
-													</label>
-                                                    <input type="text" class="form-control" placeholder="Amount">
-												</div>
-                                                <div class="checkbox checkbox-icon-black p-0">
-													<input id="checkbox36" type="checkbox">
-													<label for="checkbox36">
-														Art
-													</label>
-                                                    <input type="text" class="form-control" placeholder="Amount">
-												</div>
-                                                <div class="checkbox checkbox-icon-black p-0">
-													<input id="checkbox37" type="checkbox">
-													<label for="checkbox37">
-														Small Pads
-													</label>
-                                                    <input type="text" class="form-control" placeholder="Amount">
-                                                </div>
-                                                <div class="checkbox checkbox-icon-black p-0">
-													<input id="checkbox38" type="checkbox">
-													<label for="checkbox38">
-														Large Pads
-													</label>
-                                                    <input type="text" class="form-control" placeholder="Amount">
-                                                </div>
-											</div>
-                                            <!-- FULL NAME -->
-											<div class="form-group">
-                                                <header>Estimated Rates and Fees</header>
-												<label>Pick Up Fee</label>
-												<input type="text" class="form-control" placeholder="Enter...">
-                                                <lanel>Consignment Rate</lanel>
-                                                <input type="text" class="form-control" placeholder="Enter...">
-                                                <lanel>Trash Removal</lanel>
-                                                <input type="text" class="form-control" placeholder="Enter...">
-                                                <lanel>Additional Fees</lanel>
-                                                <input type="text" class="form-control" placeholder="Enter...">
-											</div>
-                                            <!-- BUTTONS -->
-                                            <div class="form-group">
+                                        <div class="form-group">
 								            <div class="offset-md-3 col-md-9">
 								                <button type="submit" class="btn btn-info m-r-20">Submit</button>
 								                <button type="button" class="btn btn-default">Cancel</button>
@@ -751,9 +747,9 @@
 						</div>
 					</div>
                     </div>
-                </div>
-            </div>
-			<!-- end page content -->
+			<!-- end container content -->
+                    
+        
 			<!-- start chat sidebar -->
 			<div class="chat-sidebar-container" data-close-on-body-click="false">
 				<div class="chat-sidebar">
@@ -797,6 +793,7 @@
 	<script src="assets/plugins/summernote/summernote.js"></script>
 	<script src="assets/js/pages/summernote/summernote-data.js"></script>
 	<!-- end js include path -->
+    </div>
     </div>
 </body>
 
